@@ -54,7 +54,7 @@ console.log(`https://chrome.com/${category}/5`); */
 /*const user = "Sergo";
 alert(`Привет, ${user}`); */ //Конец Интерполяция ES6
 
-let incr = 10, //Операторы в JS
+let incr = 10, //Операторы в JS oo
     decr = 10;
     //++incr;
     //--decr;
