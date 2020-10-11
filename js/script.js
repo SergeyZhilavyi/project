@@ -54,7 +54,7 @@ console.log(`https://chrome.com/${category}/5`); */
 /*const user = "Sergo";
 alert(`Привет, ${user}`); */ //Конец Интерполяция ES6
 
-let incr = 10, //Операторы в JS oo
+/*let incr = 10, //Операторы в JS oo
     decr = 10;
     //++incr;
     //--decr;
@@ -67,4 +67,24 @@ console.log(2*4 == 8);
 console.log(2*4 === '8');
 
 console.log(2 + 2 * 2 !== 6); // false
-console.log(2 + 2 * 2 !== '6'); // true т.к 6-ка справа это строка
+console.log(2 + 2 * 2 !== '6'); // true т.к 6-ка справа это строка*/ //Конец операторы JS
+
+//Условия
+
+const num = 50;
+
+switch (num) {
+    case 48:
+        console.log('Неверно');
+        break;
+    case 80:
+        console.log('Неверно');
+        break;
+    case 50:
+        console.log('Отлично !');
+        break;
+    default:
+        console.log('Не волнуйся.Всё получится!');
+        break;
+
+}
