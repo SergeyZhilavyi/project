@@ -71,7 +71,7 @@ console.log(2 + 2 * 2 !== '6'); // true т.к 6-ка справа это стр�
 
 //Условия
 
-const num = 50;
+/*const num = 50;
 
 switch (num) {
     case 48:
@@ -87,4 +87,26 @@ switch (num) {
         console.log('Не волнуйся.Всё получится!');
         break;
 
-}
+} */ //Конец разбора Условий
+
+/*let num = 50;
+/*while (num < 55) {
+    console.log(num);
+    num++;
+}*/
+
+ /* for (let i = 1; i < 8; i++) {
+    console.log(num);
+    num++;
+} */
+
+let i = 0;
+let n = 0; 
+while (i < 5) {
+  i++;
+  if (i == 3) {
+    continue;
+  }
+  n += i; //Выедет 1,3,7,12
+  
+}  
