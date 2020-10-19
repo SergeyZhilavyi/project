@@ -1,56 +1,55 @@
 "use strict";
 
-/*function showFirstMessage() {
-    console.log("Hello world!");
-}
+/*const str = "test";
+console.log(str.length); //4
 
-showFirstMessage();*/
+const arr = [1 ,2 ,4 ,5 ,7];
+console.log(arr.length); //5 */
 
-//Второй вариант 
-/*function showFirstMessage(text) {
-    console.log(text);
-}
+/*const str = "test";
+const arr = [1 ,2 ,4 ,5 ,7];
+console.log(str[3]); //Выведет t  */
 
-showFirstMessage("Hello world!");*/
+const str = "test";
+console.log(str.toUpperCase());
+//console.log(str.toLowerCase());
+console.log(str); //TEST ,test
 
-/*let num = 20;
-function showFirstMessage(text) {
-    console.log(text);
-    num = 10;
-}
+//const fruit = "Some fruit";
+//console.log(fruit.indexOf("fruit")); // Выведет 5
 
-showFirstMessage("Hello world!");
-console.log(num);*/
+const fruit = "Some fruit";
+console.log(fruit.indexOf("q")); // Выведет -1
 
-/*function calc(a,b) {
+ // logg = "Hello world";
+ //console.log(logg.slice(4, 8)); // Выведет o wo
 
-    return (a + b);
-}
+ //const logg = "Hello world";
+ //console.log(logg.slice(2, 10)); // Выведет llo worl
 
-console.log(calc(4,3));
-console.log(calc(5,6));
-console.log(calc(10,6));
+ //const logg = "Hello world";
+ //console.log(logg.slice(2, 11)); // Выведет llo world 
 
-function ret() {
-    let num = 50;
+ //const logg = "Hello world";
+ //console.log(logg.slice(4)); // Выведет o world
 
-    //Много кода :)
-    return num ;
-}
+ const logg = "Hello world";
+ console.log(logg.slice(-4, -2)); // Выведет or
 
-const anotherNum = ret();
-console.log(anotherNum);
+ //const gonta = "Hello gonta";
+ //console.log(gonta.substr(6, 4)); //Выведет gont
 
-//Function expression
-const logger = function() {
+ const gonta = "Hello gonta";
+ console.log(gonta.substr(6, 3)); //Выведет gon
 
-    console.log("Hello");
+ //const num = 24.72;
+ //console.log(Math.round(num)); //25
 
-};
+ const num = 24.2;
+ console.log(Math.round(num)); //24
 
-logger(); //Hello*/
+ // test = "14.4px";
+ //console.log(parseInt(test)); //14 
 
-/*const calc = ( a,b ) => {return a + b};
-console.log(calc(4,3));
-console.log(calc(5,6));
-console.log(calc(10,6));*/
+ const test = "14.4px";
+ console.log(parseFloat(test)); //14.4
