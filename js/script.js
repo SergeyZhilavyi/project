@@ -53,3 +53,17 @@ console.log(fruit.indexOf("q")); // Выведет -1
 
  const test = "14.4px";
  console.log(parseFloat(test)); //14.4
+
+ function createCounter() {
+       let counter = 0;
+   const myFunction = function() {
+         counter = counter + 3;
+         return counter;
+       };
+       return myFunction;
+     }
+     const increment = createCounter();
+    const c1 = increment();
+    const c2 = increment();
+    const c3 = increment();
+    console.log('example increment', c1, c2, c3);
