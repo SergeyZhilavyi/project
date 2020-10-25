@@ -56,7 +56,7 @@ console.log(fruit.indexOf("q")); // Выведет -1
 
  function createCounter() {
        let counter = 0;
-   const myFunction = function() {
+   const myFunction = function() { 
          counter = counter + 3;
          return counter;
        };
