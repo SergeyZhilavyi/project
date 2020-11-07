@@ -1,44 +1,52 @@
 "use strict";
 
-/*const arr = [1, 4, 6, 8, 10];
-arr.pop();
-console.log(arr); //[ 1, 4, 6, 8 ]*/
+/*const obj = {
+    a: 10,
+    b: 5
+};
 
-/*const arr = [1, 4, 6, 8, 10];
-arr.push(12);
-console.log(arr); //[ 1, 4, 6, 8, 10, 12 ]*/
-//const arr = [1, 4, 6, 8, 10];
-/*for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}*/
-/*for (let value of arr) {
-  console.log(value);
-}*/
+const copy = obj;//Это ссылка на объект
+copy.a = 15;
+console.log(copy);
+console.log(obj);*/
 
+//{ a: 15, b: 5 }
+//{ a: 15, b: 5 }
 
+//***Способы создания копий для объекта***
+//Способ 1. Пишем свою функцию
+function copy(mainObj) {
+    let objCopy = {};//Создаём пустую копию объекта
+    let key;
+    for(key in mainObj) {
+        objCopy[key] = mainObj[key];//Делаем копию всех свойств главного объекта
+    }
+        return objCopy;//Возвращаем копию объекта наружу, для работы с ним
+}
 
+//Протестируем нашу функцию
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+//Копируем объект, для создаём переменную newNumbers
+const newNumbers = copy(numbers); //совершили клонирование
+newNumbers.a = 15;
+newNumbers.c.x = 10;
+console.log(newNumbers);
+console.log(numbers);
 
-/*const arr = [2, 3, 6, 8, 10];
-arr.forEach(function(item, i, arr) {
-  console.log(`${i}: ${item} внутри массива ${arr}`);
-});*/
-/*0: 2 внутри массива 2,3,6,8,10
-1: 3 внутри массива 2,3,6,8,10
-2: 6 внутри массива 2,3,6,8,10
-3: 8 внутри массива 2,3,6,8,10
-4: 10 внутри массива 2,3,6,8,10*/
-
-/*const str = prompt("", "");
-const products = str.split(",");
-console.log(products.join(' ; '));*/
-
-const arr = [2, 13, 26, 8, 10];
-arr.sort(compareNum);
-console.log(arr);
-
-function compareNum(a , b) {
-  return a - b;
-} //[ 2, 8, 10, 13, 26 ]
-
+//Результат: { a: 15, b: 5, c: { x: 7, y: 4 } }
+// { a: 2, b: 5, c: { x: 7, y: 4 } }
+//Протестируем код более тщательно
+//и заметим одну особенность
+//после newNumbers пишем newNumbers.c.x = 10
+//Получаем: { a: 15, b: 5, c: { x: 10, y: 4 } }
+//{ a: 2, b: 5, c: { x: 10, y: 4 } }
+//***Конец первого способа ***/
 
 
